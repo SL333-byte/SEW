@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Solutions - Services</title>
+    <link rel="stylesheet" href="services.css">
+  <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Setup */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Section Styling */
+#services {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Software Engineering Solutions</h2>
+            <p class="section-description">We provide a wide range of high-quality software engineering services to help you build innovative, scalable, and efficient systems. Whether you're looking to develop a web application, mobile app, or enterprise system, we have you covered.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="service-icon fas fa-cogs"></i>
+                    <h3>Custom Software Development</h3>
+                    <p>We design and develop custom software solutions tailored to your specific business needs, ensuring that you get the best-fit solution for your organization.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="service-icon fas fa-cloud"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Our cloud solutions help you migrate, scale, and optimize your business processes through secure and cost-effective cloud computing technologies.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="service-icon fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>We specialize in creating mobile applications for both Android and iOS platforms, ensuring a seamless user experience and optimal performance.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="service-icon fas fa-search"></i>
+                    <h3>Software Testing & QA</h3>
+                    <p>Our comprehensive testing services ensure that your software is reliable, functional, and secure by identifying and fixing any issues early in the development cycle.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="service-icon fas fa-user-cog"></i>
+                    <h3>Consulting & Strategy</h3>
+                    <p>Our expert consultants provide insights and strategies to help you plan and execute technology solutions that drive business growth and improve efficiency.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="service-icon fas fa-laptop-code"></i>
+                    <h3>Software Maintenance</h3>
+                    <p>We provide ongoing maintenance and support for your software applications, ensuring they stay up-to-date and continue to function smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
