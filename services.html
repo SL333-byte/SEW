@@ -5,112 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Engineering Solutions - Services</title>
     <link rel="stylesheet" href="services.css">
-  <style>
-    /* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Body and Font Setup */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fa;
-    color: #333;
-}
+        /* Body and Font Setup */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
 
-/* Container */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
+        /* Navbar Styling */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+        }
 
-/* Section Styling */
-#services {
-    padding: 60px 0;
-    background-color: #fff;
-}
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
 
-.section-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
+        nav ul li {
+            margin: 0 20px;
+        }
 
-.section-description {
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #555;
-    line-height: 1.6;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
 
-.service-card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
-}
+        /* Section Styling */
+        #services {
+            padding: 60px 0;
+            background-color: #fff;
+        }
 
-.service-icon {
-    font-size: 40px;
-    color: #4CAF50;
-    margin-bottom: 20px;
-}
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-h3 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #333;
-}
+        .section-description {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+            line-height: 1.6;
+        }
 
-p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-}
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
 
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .section-description {
-        font-size: 1rem;
-    }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+        }
 
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+        .service-icon {
+            font-size: 40px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
 
-@media (max-width: 480px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-}
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-  </style>
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-description {
+                font-size: 1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Services Section -->
     <section id="services">
